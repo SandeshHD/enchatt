@@ -9,7 +9,7 @@ function uuidv4() {
 
 
 function playSound() {
-    const audio = new Audio('public/notifications/notification.wav');
+    const audio = new Audio('../../public/notifications/notification.wav');
     audio.play();
 }
 
@@ -23,7 +23,7 @@ const select = document.getElementById('btn2');
 const changeHandler = (selected) => {
     avatar = selected.value;
     document.querySelectorAll('.picture').forEach(pic => {
-        pic.src = `public/avatar/${avatar}.svg`;
+        pic.src = `../../public/avatar/${avatar}.svg`;
     })
     console.log(selected.value);
 }
@@ -124,7 +124,7 @@ form.addEventListener('submit', function (e) {
 
         if (addReply != '') {
             item.innerHTML = `<div class="text-card right">
-            <div class="pic right-pic"><img class="picture" style="${previousMessage === clientID ? 'visibility: hidden' : ''}" src="public/avatar/${avatar}.svg" alt="avatar" width="50" height="50">
+            <div class="pic right-pic"><img class="picture" style="${previousMessage === clientID ? 'visibility: hidden' : ''}" src="../../public/avatar/${avatar}.svg" alt="avatar" width="50" height="50">
             </div>
             <div class="chat right-chat text-opacity">
             <p class="text right-text" id=${messageId}>
@@ -135,7 +135,7 @@ form.addEventListener('submit', function (e) {
         }
         else
             item.innerHTML = `<div class="text-card right">
-            <div class="pic right-pic"><img class="picture" style="${previousMessage === clientID ? 'visibility: hidden' : ''}" src="public/avatar/${avatar}.svg" alt="avatar" width="50" height="50">
+            <div class="pic right-pic"><img class="picture" style="${previousMessage === clientID ? 'visibility: hidden' : ''}" src="../../public/avatar/${avatar}.svg" alt="avatar" width="50" height="50">
             </div>
             <div class="chat right-chat text-opacity">
             <p class="text right-text" id=${messageId}>${localChat}</p>
@@ -188,7 +188,7 @@ socket.on('chat-message', (chatMessage) => {
     
         if (chatMessage.addReply != '') {
             item.innerHTML = `<div class="text-card left">
-            <div class="pic left-pic"><img class="picture" src="public/avatar/${chatMessage.avatar}.svg" style="${previousMessage === chatMessage.userID ? 'visibility: hidden' : ''}" alt="avatar" width="50" height="50"></div>
+            <div class="pic left-pic"><img class="picture" src="../../public/avatar/${chatMessage.avatar}.svg" style="${previousMessage === chatMessage.userID ? 'visibility: hidden' : ''}" alt="avatar" width="50" height="50"></div>
             <div class="chat left-chat">
                 <p class="text left-text" id=${chatMessage.messageId}><a class="reply-contentbox" href="#${chatMessage.addReply.id}">${chatMessage.addReply.text}</a>${chatMessage.chat}</p>
             </div>
@@ -196,7 +196,7 @@ socket.on('chat-message', (chatMessage) => {
         }
         else
             item.innerHTML = `<div class="text-card left">
-            <div class="pic left-pic"><img class="picture" src="public/avatar/${chatMessage.avatar}.svg" style="${previousMessage === chatMessage.userID ? 'visibility: hidden' : ''}" alt="avatar" width="50" height="50"></div>
+            <div class="pic left-pic"><img class="picture" src="../../public/avatar/${chatMessage.avatar}.svg" style="${previousMessage === chatMessage.userID ? 'visibility: hidden' : ''}" alt="avatar" width="50" height="50"></div>
             <div class="chat left-chat">
                 <p class="text left-text" id=${chatMessage.messageId}>${chatMessage.chat}</p>
             </div>

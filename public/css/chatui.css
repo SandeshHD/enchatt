@@ -133,39 +133,39 @@ grid-template-columns: 88% 12%;
 }
 
 #label-1 {
-    background: url('public/avatar/a-1.svg') no-repeat;
+    background: url('../avatar/a-1.svg') no-repeat;
 }
 
 #label-2 {
-    background: url('public/avatar/a-2.svg') no-repeat;
+    background: url('../avatar/a-2.svg') no-repeat;
 }
 
 #label-3 {
-    background: url('public/avatar/a-3.svg') no-repeat;
+    background: url('../avatar/a-3.svg') no-repeat;
 }
 
 #label-4 {
-    background: url('public/avatar/a-4.svg') no-repeat;
+    background: url('../avatar/a-4.svg') no-repeat;
 }
 
 #label-5 {
-    background: url('public/avatar/a-5.svg') no-repeat;
+    background: url('../avatar/a-5.svg') no-repeat;
 }
 
 #label-6 {
-    background: url('public/avatar/a-6.svg') no-repeat;
+    background: url('../avatar/a-6.svg') no-repeat;
 }
 
 #label-7 {
-    background: url('public/avatar/a-7.svg') no-repeat;
+    background: url('../avatar/a-7.svg') no-repeat;
 }
 
 #label-8 {
-    background: url('public/avatar/a-8.svg') no-repeat;
+    background: url('../avatar/a-8.svg') no-repeat;
 }
 
 #label-9 {
-    background: url('public/avatar/a-9.svg') no-repeat;
+    background: url('../avatar/a-9.svg') no-repeat;
 }
 
 #choose-avatar {

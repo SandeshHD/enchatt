@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    padding: 20px 0 0;
+    position: absolute;
+    background-color: #eff2f9;
+}
+
+.foot {
+    display: grid;
+    grid-template-rows: 1fr 1fr max-content;
+    grid-gap: 20px;
+    padding-bottom: 5px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fpart1 {
+    padding: 25px 85px 25px 25px;
+}
+
+#enchat {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#belowenchat {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #23272a;
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 20px;
+    color: #23272a;
+}
+
+#PAT a {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .foot a {
+        text-decoration: none;
+        color: #23272a;
+        font-family: "Poppins", sans-serif;
+    }
+    .fpart1 {
+        padding: 0px 0 25px 25px;
+    }
+    .copy {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 0;
+    }
+    .copyright {
+        padding-top: 90px;
+        font-family: sans-serif;
+    }
+    #PAT {
+        justify-self: end;
+        margin-right: 25px;
+        align-self: center;
+    }
+}
